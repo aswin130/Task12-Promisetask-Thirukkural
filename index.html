@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thirukural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>THIRUKURAL</h1>
+    <div>
+        <div class="input-container">
+            <div>
+                <label for="kural-no">Number: </label>
+                <input type="number" name="kural-no" min=1 max=1330 id="kural-no">
+                <span id="error">* Number is mandatory</span>
+            </div>
+            <div>
+                <label>Language: </label>
+                <div class="radioDiv">
+                    <input type="radio" id="english" name="language" value="english" checked>
+                    <label for="english">English</label>
+                    <input type="radio" id="tamil" name="language" value="tamil">
+                    <label for="tamil">Tamil</label>
+                </div>
+            </div>
+            <button type="submit" id="submit-btn">Fetch</button>
+        </div>
+        <div class="data-container" id="data">
+            <table id="data-table">
+                <tbody>
+                    <tr>
+                        <td>Number</td>
+                        <td>-</td>
+                        <td id="content-num"></td>
+                    </tr>
+                    <tr>
+                        <td>Section</td>
+                        <td>-</td>
+                        <td id="content-sec"></td>
+                    </tr>
+                    <tr>
+                        <td>Chapter Group</td>
+                        <td>-</td>
+                        <td id="content-chapGrp"></td>
+                    </tr>
+                    <tr>
+                        <td>Chapter</td>
+                        <td>-</td>
+                        <td id="content-chap"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="content"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
